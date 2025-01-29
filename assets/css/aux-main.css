@@ -1,0 +1,39 @@
+.ajuste-navbar{
+  width: 50%;  margin: 0 auto;
+  font-family: Orpheus Pro;
+  font-size: calc((2 - 1) * 1.2vw + 1rem);
+  color: white;
+}
+
+.primeiro-titulo{
+  font-size: calc((4 - 1) * 1.2vw + 1rem);
+  font-family: Garamond;
+  margin: 1rem 0;
+}
+
+.aux-primeiro-titulo p{
+  font-size: calc((1.5 - 1) * 1.2vw + 1rem);
+  font-family: Garamond;
+  color: white;
+}
+
+.btn-message{
+  font-size: (calc(1.2 - 1) * 1.2vw + 1rem);
+  text-transform: uppercase;
+  font-family: Garamond;
+  color: rgb(148, 81, 0);
+  background-color: rgba(255, 255, 255, 1);
+  border: none;      
+  padding: 10px 20px;  
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.btn-message:hover {
+  background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.btn-message:active {
+  color: #333;
+}
