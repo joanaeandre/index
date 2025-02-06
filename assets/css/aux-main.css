@@ -81,35 +81,6 @@
     color: hsla( 0, 0%, 0%, 1);
 }
 
-.btn-message {
-    font-size: (calc(1.2 - 1) * 1.2vw + 1rem);
-    text-transform: uppercase;
-    font-family: Garamond;
-    color: #000000;
-    text-align: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 1);
-    border: none;
-    padding: 15px 10px;
-    cursor: pointer;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-message a {
-    text-align: center;
-    color: #ffbb27;
-}
-
-.btn-message:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #ffbb27;
-}
-
-.btn-message:active {
-    color: #333;
-}
-
 .btn-message-os {
     /*grid-area: 3 / 11 / 5 / 17;*/
     font-size: (calc(1.2 - 1) * 1.2vw + 1rem);
