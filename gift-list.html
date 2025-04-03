@@ -60,6 +60,26 @@
             });
         });
     </script>
+
+
+    <style>
+        .linha-movel {
+            display: none;
+            /* Esconde por padrão */
+            color: #444444;
+            border: 0;
+            border-top: 1px solid;
+            opacity: 0.50;
+            margin: 0 50px;
+        }
+        
+        @media (max-width: 2000px) {
+            .linha-movel {
+                display: block;
+                /* Mostra apenas em dispositivos móveis */
+            }
+        }
+    </style>
     <!-- =======================================================
   * Template Name: Laura
   * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
@@ -109,8 +129,8 @@
         </section>
         <!-- /INICIO -->
 
-        <!-- CERIMONIA -->
-        <section id="cerimonia " class="about section " style="padding: 0px 0; padding-bottom: 60px; ">
+        <!-- DESEJOS -->
+        <section id="desejos " class="about section " style="padding: 0px 0; padding-bottom: 60px; ">
             <div class="container " data-aos="fade-up " data-aos-delay="100 ">
                 <div class="row ">
                     <div class="content ">
@@ -151,7 +171,29 @@
                 </div>
             </div>
         </section>
-        <!-- /CERIMONIA -->
+        <!-- /DESEJOS -->
+
+        <hr class="linha-movel">
+
+        <!-- MUSICA -->
+        <section id="musica " class="about section " style="margin-top: 10px; ">
+            <div class="container " data-aos="fade-up " data-aos-delay="100 ">
+                <div class="row gy-6 ">
+                    <div class="col-lg-6 ">
+                        <div style="display: flex; justify-content: center; align-items:center; margin: 10px 20px 20px 20px;">
+                            <iframe style="border-radius:12px; max-width: 800px;" src="https://open.spotify.com/embed/playlist/4WaCw3YSCiWCljqTFznlJI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 content ">
+                        <p class="aux-txt-section " style="text-align: left; margin-left: 20px; margin-top: 10px; ">
+                            A nossa playlist de casamento está disponível no Spotify. Se quiseres, adiciona as tuas músicas favoritas para que possamos dançar juntos!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /MUSICA -->
 
     </main>
 
