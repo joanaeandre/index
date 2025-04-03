@@ -119,3 +119,35 @@
                 opacity: 0.50;
                 margin: 0 50px;
             }
+            
+            .btn-message-mus {
+                /*grid-area: 3 / 11 / 5 / 17;*/
+                font-size: (calc(1.2 - 1) * 1.2vw + 1rem);
+                text-transform: uppercase;
+                font-family: Garamond;
+                color: #ffffff;
+                text-align: center;
+                align-items: center;
+                background-color: rgb(0, 0, 0);
+                border: none;
+                margin: 10px 60px 50px 60px;
+                padding: 15px 50px 15px 50px;
+                cursor: pointer;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s, color 0.3s;
+                font-weight: bold;
+            }
+            
+            .btn-message-mus a {
+                text-align: center;
+                color: #ffbb27;
+            }
+            
+            .btn-message-mus:hover {
+                background-color: rgba(32, 32, 32, 0.7);
+                color: #ffffff;
+            }
+            
+            .btn-message-mus:active {
+                color: #333;
+            }
