@@ -31,37 +31,6 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/aux-main.css" rel="stylesheet">
 
-    <!-- Javascript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('copyButton').addEventListener('click', function() {
-                var input = document.getElementById('myInput');
-                input.select();
-                document.execCommand('copy');
-                //alert('Texto copiado: ' + input.value);
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('copyButton2').addEventListener('click', function() {
-                var input = document.getElementById('myInput2');
-                input.select();
-                document.execCommand('copy');
-                //alert('Texto copiado: ' + input.value);
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('copyButton3').addEventListener('click', function() {
-                var input = document.getElementById('myInput3');
-                input.select();
-                document.execCommand('copy');
-                //alert('Texto copiado: ' + input.value);
-            });
-        });
-    </script>
-
-
     <style>
         .linha-movel {
             display: none;
@@ -71,6 +40,19 @@
             border-top: 1px solid;
             opacity: 0.50;
             margin: 0 50px;
+        }
+        
+        .aux-txt-section {
+            font-family: Garamond;
+            font-size: calc((1.5 - 1) * 1.2vw + 1rem);
+            text-align: center;
+            line-height: 1.6em;
+            color: hsla( 0, 0%, 0%, 1);
+            display: block;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
         }
         
         @media (max-width: 2000px) {
@@ -116,7 +98,7 @@
     <main class="main ">
 
         <!-- INICIO -->
-        <section id="hero " class="about section " style="padding: 40px 0; padding-bottom: 60px; padding-top: 60px; ">
+        <section id="hero " class="about section" style="margin-bottom: -100px;">
             <div class="container text-center aux-primeiro-titulo " data-aos="fade-up " data-aos-delay="100 ">
                 </br>
                 </br>
@@ -124,54 +106,19 @@
                 </br>
                 </br>
                 </br>
-                <h1 class="primeiro-titulo ">Lista de Desejos</h1>
+                <h1 class="primeiro-titulo " style="margin-bottom: 25px;">Mensagem</h1>
+                <p class="aux-txt-section " style="color: hsla( 0, 0%, 0%, 1);">
+                    Por favor, utiliza o formulário abaixo para confirmar a tua presença, informar-nos sobre quaisquer alergias alimentares ou outras necessidades especiais.
+                    <br>A tua participação é essencial para o sucesso deste dia tão especial.
+                </p>
+                </br>
             </div>
         </section>
         <!-- /INICIO -->
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <span class="description-title">Contact</span>
-                <h2>Contact</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            </div>
-            <!-- End Section Title -->
-
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4">
-                        <div class="info-item d-flex flex-column justify-content-center align-items-center">
-                            <i class="bi bi-geo-alt"></i>
-                            <h3>Address</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
-                        </div>
-                    </div>
-                    <!-- End Info Item -->
-
-                    <div class="col-lg-4">
-                        <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
-                            <i class="bi bi-telephone"></i>
-                            <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
-                        </div>
-                    </div>
-                    <!-- End Info Item -->
-
-                    <div class="col-lg-4">
-                        <div class="info-item d-flex flex-column justify-content-center align-items-center">
-                            <i class="bi bi-envelope"></i>
-                            <h3>Email Us</h3>
-                            <p>info@example.com</p>
-                        </div>
-                    </div>
-                    <!-- End Info Item -->
-
-                </div>
 
                 <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
                     <div class="row gy-4">
