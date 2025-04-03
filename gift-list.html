@@ -31,6 +31,35 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/aux-main.css" rel="stylesheet">
 
+    <!-- Javascript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('copyButton').addEventListener('click', function() {
+                var input = document.getElementById('myInput');
+                input.select();
+                document.execCommand('copy');
+                //alert('Texto copiado: ' + input.value);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('copyButton2').addEventListener('click', function() {
+                var input = document.getElementById('myInput2');
+                input.select();
+                document.execCommand('copy');
+                //alert('Texto copiado: ' + input.value);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('copyButton3').addEventListener('click', function() {
+                var input = document.getElementById('myInput3');
+                input.select();
+                document.execCommand('copy');
+                //alert('Texto copiado: ' + input.value);
+            });
+        });
+    </script>
     <!-- =======================================================
   * Template Name: Laura
   * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
@@ -90,10 +119,34 @@
                         <p class="aux-txt-section ">No entanto, se também quiseres podes contribuir para a nossa lista de desejos.</p>
                         </br>
                         <p class="aux-txt-section ">IBAN</p>
-                        <p class="aux-txt-section ">PT50 0023 0000 45676136874 94</p>
+                        <!--<p class="aux-txt-section ">PT50 0023 0000 45676136874 94</p>-->
+
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div class="input-group" style="width: fit-content;">
+                                <input type="text" class="form-control" id="myInput" value="PT50002300004567613687494" readonly>
+                                <button class="btn btn-outline-secondary" type="button" id="copyButton">Copiar</button>
+                            </div>
+                        </div>
+
                         </br>
                         <p class="aux-txt-section ">ou MBway dos noivos</p>
-                        <p class="aux-txt-section ">+351 918 512 504 &nbsp;&nbsp;|&nbsp;&nbsp; +351 926 509 670</p>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div class="input-group" style="width: fit-content;">
+                                <input type="text" class="form-control" id="myInput2" value="918512504" readonly>
+                                <button class="btn btn-outline-secondary" type="button" id="copyButton2">Copiar</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div class="input-group" style="width: fit-content;">
+                                <input type="text" class="form-control" id="myInput3" value="926509670" readonly>
+                                <button class="btn btn-outline-secondary" type="button" id="copyButton3">Copiar</button>
+                            </div>
+                        </div>
+                        <!--<p class="aux-txt-section ">+351 918 512 504 &nbsp;&nbsp;|&nbsp;&nbsp; +351 926 509 670</p>-->
+
+
+
                     </div>
                 </div>
             </div>

@@ -31,6 +31,25 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/aux-main.css" rel="stylesheet">
 
+    <style>
+        .linha-movel {
+            display: none;
+            /* Esconde por padrão */
+            color: #444444;
+            border: 0;
+            border-top: 1px solid;
+            opacity: 0.50;
+            margin: 0 50px;
+        }
+        
+        @media (max-width: 991px) {
+            .linha-movel {
+                display: block;
+                /* Mostra apenas em dispositivos móveis */
+            }
+        }
+    </style>
+
     <!-- =======================================================
   * Template Name: Laura
   * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
@@ -67,7 +86,7 @@
     <main class="main ">
 
         <!-- INICIO -->
-        <section id="hero " class="about section ">
+        <section id="hero " class="about section " style="padding-bottom: 25px">
             <div class="container text-center aux-primeiro-titulo " data-aos="fade-up " data-aos-delay="100 ">
                 </br>
                 </br>
@@ -81,10 +100,10 @@
         <!-- /INICIO -->
 
         <!-- IMAGEM PRINCIPAL -->
-        <section id="cerimonia " class="about section ">
+        <section id="cerimonia " class="about section " style="padding-top: 0px">
             <div class="container " data-aos="fade-up " data-aos-delay="100 ">
                 <div class="row ">
-                    <img src="assets/img/our-story-1.jpg " class="img-fluid " style="display: block; margin-left: auto; margin-right: auto; ">
+                    <img src="assets/img/our-story-1.jpg " class="img-fluid ">
                 </div>
             </div>
         </section>
@@ -122,8 +141,10 @@
         </section> -->
         <!-- /QUOTE2 -->
 
+        <hr class="linha-movel">
+
         <!-- TEXTO -->
-        <section id="cerimonia " class="about section " style="margin-top: 50px; ">
+        <section id="cerimonia " class="about section " style="margin-top: 10px; ">
             <div class="container " data-aos="fade-up " data-aos-delay="100 ">
                 <div class="row gy-6 ">
                     <div class="col-lg-6 ">
