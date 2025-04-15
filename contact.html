@@ -62,6 +62,29 @@
             }
         }
     </style>
+
+
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (
+            function() {
+                emailjs.init("898066"); // Substitua "your-user-id" com o seu ID do EmailJS.
+            }
+        )();
+    </script>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_xzaw8vs', 'your-template-id', this)
+                .then(function() {
+                    alert('Mensagem enviada com sucesso!');
+                }, function(error) {
+                    alert('Falha ao enviar mensagem: ' + JSON.stringify(error));
+                });
+        });
+    </script>
     <!-- =======================================================
   * Template Name: Laura
   * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
@@ -115,6 +138,17 @@
             </div>
         </section>
         <!-- /INICIO -->
+
+        <form id="contact-form">
+            <input type="text" name="from_name" placeholder="Seu nome" required>
+            <input type="email" name="reply_to" placeholder="Seu email" required>
+            <textarea name="message" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+
+
+
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">
